@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/phpstorm-workshop.iml" filepath="$PROJECT_DIR$/.idea/phpstorm-workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PhpStormWorkshopPj.iml" filepath="$PROJECT_DIR$/.idea/PhpStormWorkshopPj.iml" />
     </modules>
   </component>
 </project>
