@@ -6,7 +6,14 @@ $articles = [
     ['title' => 'Read this', 'content' => 'You must read this article']
 ];
 
+foreach ($articles as $article) {
 
+    foreach ($article as $key => $value) {
+       echo ($key == 'title') ? ($key . ' - ' . $value . ", ") : ($key . ' - ' . $value . "; ");
+    }
+    echo "<br/>";
+}
+echo "<hr>";
 
 var_dump($articles);
 echo "<br/><br>";
