@@ -14,3 +14,15 @@ if (mysqli_connect_error()) {
 
 echo "Connected successfully.";
 
+$sql = "SELECT * 
+        FROM article
+        ORDER BY published_at";
+
+$result = mysqli_query($conn, $sql);
+
+if ($result === false) {
+    echo mysqli_error($conn);
+} else {
+    $article = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    var_dump($article);
+}
