@@ -26,6 +26,7 @@ if ($results === false) {
 
 ?>
 
+<!-- HTML -->
 <!DOCTYPE html>
 <html>
 <head>
