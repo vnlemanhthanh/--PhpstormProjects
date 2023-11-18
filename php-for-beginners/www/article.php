@@ -12,10 +12,10 @@ if (mysqli_connect_error()) {
     exit;
 }
 
-$id = 1;  // get input
+//$id = 1;  // get input
 $sql = "SELECT *
         FROM article
-        WHERE id = $id";
+        WHERE id = " . $_GET['id'];
 
 $results = mysqli_query($conn, $sql);
 
@@ -46,7 +46,7 @@ if ($results === false) {
     <?php else: ?>
 
         <article>
-            <h2><?= $article['title']; ?></h2>
+            <h2><?= $article['title']; ?></a></h2>
             <p><?= $article['content']; ?></p>
         </article>
 
